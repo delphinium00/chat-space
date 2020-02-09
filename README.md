@@ -26,4 +26,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |message|string|null: false|
+|image|string|null|
+
 
