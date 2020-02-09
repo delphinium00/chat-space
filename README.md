@@ -11,7 +11,7 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### ## groups_usersテーブル
 |Column|Type|Options|
