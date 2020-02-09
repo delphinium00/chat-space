@@ -1,7 +1,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, add_index :users, :name|
 |e_mail|string|null: false|
 |pass_word|string|null: false|
 
