@@ -29,3 +29,9 @@ Things you may want to cover:
 |nick_name|string|null; false|
 |e_mail|string|null; false|
 |pass_word|string|null; false|
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|group_name|string|null; false|
+|
