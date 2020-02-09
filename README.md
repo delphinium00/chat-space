@@ -1,7 +1,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|nick_name|string|null: false|
+|name|string|null: false|
 |e_mail|string|null: false|
 |pass_word|string|null: false|
 
