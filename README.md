@@ -30,10 +30,9 @@ Things you may want to cover:
 |e_mail|string|null; false|
 |pass_word|string|null; false|
 
-## groupsテーブル
+## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|messages|string|null; false|
 |group_name|string|null; false|
 
 ### ## groups_usersテーブル
