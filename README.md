@@ -1,7 +1,6 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |nick_name|string|null: false|
 |e_mail|string|null: false|
 |pass_word|string|null: false|
