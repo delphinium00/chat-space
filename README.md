@@ -4,6 +4,9 @@
 |name|string|null: false, add_index :users, :name|
 |e_mail|string|null: false|
 |pass_word|string|null: false|
+### Association
+- has_many :messages
+- has_many :groups
 
 ## groupテーブル
 |Column|Type|Options|
