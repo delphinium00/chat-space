@@ -13,7 +13,7 @@
 |------|----|-------|
 |name|string|null: false|
 
-### ## groups_usersテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|t.references|null: false, foreign_key: true|
@@ -22,4 +22,8 @@
 - belongs_to :group
 - belongs_to :user
 
+## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|message|string|null: false|
 
