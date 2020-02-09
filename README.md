@@ -27,3 +27,4 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |nick_name|string|null; false|
+|e-mail|string|null; false|
