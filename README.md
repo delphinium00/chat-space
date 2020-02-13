@@ -30,8 +30,8 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|content|string|null: false|
-|image|string|null|
+|content|string|
+|image|string|
 |user|t.references|null: false, foreign_key: true|
 |group|t.references|null: false, foreign_key: true|
 ### Association
