@@ -5,7 +5,7 @@
 |e_mail|string|null: false|
 |pass_word|string|null: false|
 ### Association
-- has_many :group, through: group_users
+- has_many :groups, through: group_users
 - has_many :messages
 - has_many :group_users
 
