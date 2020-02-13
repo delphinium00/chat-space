@@ -5,8 +5,8 @@
 |e_mail|string|null: false|
 |pass_word|string|null: false|
 ### Association
-- has_many :messages
-- has_many :groups
+- has_many :message
+- has_many :group
 
 ## groupテーブル
 |Column|Type|Options|
