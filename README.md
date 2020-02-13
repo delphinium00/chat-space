@@ -12,6 +12,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+### Association
+- has_many :user
 
 ## groups_usersテーブル
 |Column|Type|Options|
