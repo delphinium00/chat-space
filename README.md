@@ -2,8 +2,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, add_index :users, :name|
-|e_mail|string|null: false|
-|pass_word|string|null: false|
 ### Association
 - has_many :groups, through: group_users
 - has_many :messages
