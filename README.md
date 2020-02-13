@@ -31,4 +31,3 @@
 |image|string|null|
 ### Association
 - belongs_to :user
-- has_many :groups
