@@ -102,18 +102,18 @@
     background-color: #fafafa;
     .message{
       padding-bottom: 40px;
-       &__upper-info{
-        display: flex;
-        margin-bottom: 10px;
+        &__upper-info{
+          display: flex;
+          margin-bottom: 10px;
         &__talker{
-         color: #434a54;
-         font-size: 16px;
-         font-weight: bold;
-         }
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold;
+        }
         &__date{
-         color: #999999;
-         font-size: 12px;
-         margin-left: 10px;
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
         }
       }
       .message__text{
@@ -124,14 +124,43 @@
     }
   }
   .form{
-   background-color: #d2d2d2;
-   height: 90px;
-   padding: 20px 40px;
-   .input-box{
-    position: relative;
-    width: 100%;
-   }
-   .submit-btn{
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 40px;
+    form{
+      display: flex;
+      .input-box{
+      position: relative;
+      width: 100%;
+       &__text{
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+       }
+        &__image{
+         font-size: 1.3rem;
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         cursor: pointer;
+         label{
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+         }
+         .input-box__image__file{
+          display: none;
+         }
+        }
+      }
+      
+    }    
+  }
+  .submit-btn{
     width: 100px;
     height: 50px;
     padding: 0 30px;
@@ -140,5 +169,4 @@
     color: white;
     cursor: pointer;
    }
-  }
 }
