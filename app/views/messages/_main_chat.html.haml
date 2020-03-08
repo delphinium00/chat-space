@@ -26,8 +26,8 @@
   .form
     %form.new_message{:id => "new_message" , :method => "post" , :enctype => "multipart/form-data" , :accept_charset => "UTF-8"}
       .input-box
-        %input.input-box__text{:type => "text" , :name => "message[content]" , :id => "message_content" , :placeholer => "type a message"}
+        %input.input-box__text{:type => "text" , :name => "message[content]" , :id => "message_content" , :placeholder => "type a message"}
         %label.input-box__image{:for => "message_image"}
-          = icon('fa' , 'image')
+          = icon('far' , 'image')
           %input.input-box__image__file{:type => "file" , :name => "message[image]" , :id => "message_image"}
       %input.submit-btn{:type => "submit" , :name => "commit" , :value => "Send" , :data_disable_with => "send"}

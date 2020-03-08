@@ -20,10 +20,9 @@
     }
     &__lists {
      display: flex;
-     justify-content: space-between;
-     list-style: none;
      .list {
       display: inline-block;
+
      }
      .icon {
       color: white;
