@@ -1,12 +1,20 @@
 .chat-side
- .side-header
-  %h3.side-header__name
-  ユーザーネーム
-  %ul.side-header__lists
-   %li.list
-    = link_to '#' do
-     = icon('fa', 'edit',class: 'icon')
-   %li.list
-    = link_to '#' do
-     = icon('fa', 'cog',class: 'icon')
- .groups
+  .side-header
+    .side-header__box
+      %h3.side-header__box__name
+        = current_user.name
+      %ul.side-header__box__lists
+        %li.list
+          = link_to new_group_path do
+            = icon('fa', 'edit',class: 'icon')
+        %li.list
+          = link_to edit_user_path(current_user) do
+            = icon('fa', 'cog', class: 'icon')
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__group-header-name
+            = group.name
+          .group__group-latest-message
+            メッセージはまだありません。
