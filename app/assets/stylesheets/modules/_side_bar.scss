@@ -15,20 +15,22 @@
       width: 100%;
       font-weight: bold;
       &__name {
-      font-size: 16px;
-      font-weight: bold;
-      }
-      &__lists {
-       display: flex;
-        .list {
-         display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
         }
-        .icon {
-         color: white;
-         font-size: 16px;
+        &__lists {
+         display: flex;
+          .list {
+           display: inline-block;
+           margin-left: 0.3em;
+          }
+          .icon {
+           color: white;
+           font-size: 14px;
+          }
         }
-      }
     }
+    
   }
 
   .groups{
