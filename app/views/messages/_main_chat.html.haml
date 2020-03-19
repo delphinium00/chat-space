@@ -2,11 +2,13 @@
   .main-header
     .main-header__left-box
       %h2.main-header__left-box__current-group
-        aa
+        = @group.name
       %ul.main-header__left-box__member-list
-        bbbb
+        Member:
+        - @group.group_users.each do |group_user|
+          = group_user.user.name
     .main-header__edit-btn
-      Edit
+      = link_to 'Edit', edit_group_path(@group)
   .messages
     = render @messages
   .form
@@ -14,6 +16,6 @@
       .input-box
         = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
         = f.label :image, class: 'input-box__image' do
-          = icon('fas', 'image', class: 'icon')
+          = icon('far', 'image', class: 'icon')
           = f.file_field :image, class: 'input-box__image__file'
       = f.submit 'Send', class: 'submit-btn'
